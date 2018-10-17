@@ -1,12 +1,8 @@
 <a href="https://syntoxprofiler.fimm.fi"><img style="width:15%; margin:0 0;" width = "15%" src="https://github.com/IanevskiAleksandr/SynToxProfiler/blob/master/logo.png" align="left" hspace="10" vspace="6"></a>
 # SynToxProfiler: an interactive analysis tool for drug combination prioritization based on integrated synergy, toxicity and potency profiling
 
-
-
-<br><br><br>
 **Article**: [to be filled]
 
-<p style="text-align:justify;"> <b>SynToxProfiler</b> 
   
   SynToxProfiler: an interactive analysis tool for drug combination prioritization based on integrated synergy, toxicity and potency profiling. SynToxProfiler supports 3 different ways to estimate drug-combination toxicity and enhanced with interactive investigation of the results. The public version of web application (https://syntoxprofiler.fimm.fi) is hosted by Open Source Shiny Server.</p>
 
