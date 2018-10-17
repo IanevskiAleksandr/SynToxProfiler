@@ -3,7 +3,7 @@
 
 
 <a href="https://synergyfinder.fimm.fi"><img style="width:15%" width = "15%" src="https://github.com/IanevskiAleksandr/SynToxProfiler/blob/master/logo.png" align="left" hspace="10" vspace="6"></a>
-<br>
+<br><br><br>
 **Article**: [to be filled]
 
 <p style="text-align:justify;"> <b>SynToxProfiler</b> 
