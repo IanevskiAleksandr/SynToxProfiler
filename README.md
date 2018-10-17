@@ -2,7 +2,7 @@
 
 
 
-<a href="https://synergyfinder.fimm.fi"><img style="width:15%" width = "15%" src="http://syntoxprofiler.fimm.fi/howto/FigWorkFlow.png" align="left" hspace="10" vspace="6"></a>
+<a href="https://synergyfinder.fimm.fi"><img style="width:15%" width = "15%" src="https://github.com/IanevskiAleksandr/SynToxProfiler/blob/master/logo.png" align="left" hspace="10" vspace="6"></a>
 
 **Article**: [to be filled]
 
