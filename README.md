@@ -13,7 +13,7 @@
 ##
 
 
-![alt text](https://http://syntoxprofiler.fimm.fi/howto/FigWorkFlow.png)
+![alt text](https://github.com/IanevskiAleksandr/SynToxProfiler/blob/master/FigWorkFlow.png)
 
 
 For any questions please contact **Aleksandr Ianevski** [@IanevskiAleksandr](aleksandr.ianevski@helsinki.fi)
