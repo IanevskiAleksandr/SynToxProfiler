@@ -9,13 +9,13 @@
 ##
 
 
-![alt text](https://github.com/IanevskiAleksandr/SynToxProfiler/blob/master/FigWorkFlow.png)
+![alt text](https://github.com/IanevskiAleksandr/SynToxProfiler/blob/master/Fig_Work_Flow.png)
 
 
 For any questions please contact **Aleksandr Ianevski** [@IanevskiAleksandr](aleksandr.ianevski@helsinki.fi)
 
 ## Copyright and license
 
-Code copyright 2018 SynToxProfiler
+Code copyright 2019 SynToxProfiler
 
 Licence [https://github.com/IanevskiAleksandr/SynToxProfiler/blob/master/LICENSE]
