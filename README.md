@@ -4,7 +4,7 @@
 **Article**: [to be filled]
 
   
-  SynToxProfiler: an interactive analysis tool for drug combination prioritization based on integrated synergy, toxicity and potency profiling. SynToxProfiler supports 3 different ways to estimate drug-combination toxicity and enhanced with interactive investigation of the results. The public version of web application (https://syntoxprofiler.fimm.fi) is hosted by Open Source Shiny Server.</p>
+  SynToxProfiler: an interactive analysis tool for drug combination prioritization based on integrated synergy, toxicity and potency profiling, with interactive visualization of the results. The public version of web application (https://syntoxprofiler.fimm.fi) is hosted by Open Source Shiny Server.</p>
 
 ##
 
