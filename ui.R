@@ -6,7 +6,7 @@ shinyUI(navbarPage(useShinyjs(), useToastr(),
             div(class="reference", tags$a(href="http://www.ncbi.nlm.nih.gov/pubmed/26949479", target="_blank",
                                           tags$p("Reference"))
              ),
-            div(class="howto", actionButton('howtoin','How to use', icon = icon("file", lib = "glyphicon"), class = 'btn-primary')
+            div(class="howto", actionButton('howtoin','How to use', icon = icon("file", lib = "glyphicon"), class = 'btn-primary', onclick="window.open('http://syntoxprofiler.fimm.fi/howto/')")
             ),
             div(class="author", icon("user", lib = "glyphicon"))
   ),
@@ -30,8 +30,8 @@ shinyUI(navbarPage(useShinyjs(), useToastr(),
       
       radioButtons("conrol_", "Toxicity calculations:",
                    list("From control data" = "Control",
-                        "SynTox Equation" = "SynTox",
-                        "QSTR based approximation" = "QSTR")),
+                        "PrOCTOR based approximation" = "PrOCTOR",
+                        "No toxicity (rank combinations only based on synergy and efficacy)" = "SynTox")),
       br(),
       
       fluidRow(column(width = 8, checkboxInput("synfin", "Calculate synergy scores using SynergyFinder", !0)),
@@ -67,9 +67,9 @@ shinyUI(navbarPage(useShinyjs(), useToastr(),
                                            fluidRow(
                                              radioButtons("icons2", "Ranking (based on):",
                                                           choices =
-                                                            list("synergy, toxicity, potency", "synergy, toxicity",
-                                                                 "synergy, potency", "toxicity, potency", "synergy", "potency", "toxicity"),
-                                                          selected = "synergy, toxicity, potency"
+                                                            list("synergy, toxicity, efficacy", "synergy, toxicity",
+                                                                 "synergy, efficacy", "toxicity, efficacy", "synergy", "efficacy", "toxicity"),
+                                                          selected = "synergy, toxicity, efficacy"
                                              )
                                            ),
                                            fluidRow(
