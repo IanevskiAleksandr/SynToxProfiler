@@ -1,4 +1,4 @@
-<a href="https://syntoxprofiler.fimm.fi"><img style="width:15%; margin:0 0;" width = "15%" src="https://github.com/IanevskiAleksandr/SynToxProfiler/blob/master/logo.png" align="left" hspace="10" vspace="4"></a>
+<a href="https://syntoxprofiler.fimm.fi"><img style="width:15%; margin:0 0;" width = "15%" src="https://github.com/IanevskiAleksandr/SynToxProfiler/blob/master/logo.png" align="left" hspace="10" vspace="10"></a>
 # SynToxProfiler: an approach for top drug combination selection based on integrated profiling of synergy, toxicity and efficacy
 
 **Article**: [to be filled]
