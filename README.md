@@ -9,7 +9,7 @@
 ##
 
 
-
+![alt text](https://github.com/IanevskiAleksandr/SynToxProfiler/blob/master/Fig_Work_Flow.png) 
 
 
 For any questions please contact **Aleksandr Ianevski** [@IanevskiAleksandr](aleksandr.ianevski@helsinki.fi)
