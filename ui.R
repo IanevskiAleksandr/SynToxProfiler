@@ -30,7 +30,6 @@ shinyUI(navbarPage(useShinyjs(), useToastr(),
       
       radioButtons("conrol_", "Toxicity calculations:",
                    list("From control data" = "Control",
-                        "PrOCTOR based approximation" = "PrOCTOR",
                         "No toxicity (rank combinations only based on synergy and efficacy)" = "SynTox")),
       br(),
       
@@ -60,18 +59,22 @@ shinyUI(navbarPage(useShinyjs(), useToastr(),
                            br(), #tags$video(id="videoIntro", type = "video/mp4",src = "video.mp4", width="95%", controls = "controls"),
                            uiOutput("video"),
                            fluidRow(column(8,offset=1,
-                                           plotOutput("barplot", hover = hoverOpts("plot_hover2", delay = 250, delayType = "throttle"), width = "95%"), uiOutput("hover_info2")),
+                                           plotOutput("barplot", hover = hoverOpts("plot_hover2", delay = 200, delayType = "throttle"), width = "95%"), uiOutput("hover_info2")),
                                     div(id = "col1id", column(2, offset = 0,
-                                           br(),br(),br(),
+                                           br(),
+                                           
+                                           selectInput("rankbasedon", "Ranking (based on):",
+                                                                                           list("Full matrix", "Most synergistic area (3x3 dose window)")),
+                                           
+                                           br(),br(),
                                            
                                            fluidRow(
-                                             radioButtons("icons2", "Ranking (based on):",
+                                             radioButtons("icons2", "Plot type:",
                                                           choices =
-                                                            list("synergy, toxicity, efficacy", "synergy, toxicity",
-                                                                 "synergy, efficacy", "toxicity, efficacy", "synergy", "efficacy", "toxicity"),
-                                                          selected = "synergy, toxicity, efficacy"
+                                                            list("selective efficacy & synergy", "efficacy & synergy"),
+                                                          selected = "selective efficacy & synergy"
                                              )
-                                           ),
+                                           ),  br(),   br(),  
                                            fluidRow(
                                              downloadButton("exp_excel", "Export summary table")
                                            ), br(),                                          
@@ -82,22 +85,23 @@ shinyUI(navbarPage(useShinyjs(), useToastr(),
                             )
                            
                   ),
-                  tabPanel("Combined landscape", uiOutput("plotlcont"), uiOutput("hover_info3")),
-                  tabPanel("Individual plots",
+                  tabPanel("STE score scatterplot",
                            
                            
                            fluidRow( br(),br(),br(),
                              column(7, offset = 1,
                                     plotOutput("scatterplot", 
-                                               hover = hoverOpts("plot_hover", delay = 250, delayType = "throttle")), uiOutput("hover_info")),
+                                               hover = hoverOpts("plot_hover", delay = 200, delayType = "throttle")), uiOutput("hover_info")),
                              column(2, offset = 1,
-                                    br(),br(),br(),
+                                    br(),
+                                    selectInput("rankbasedon2", "Ranking (based on):",
+                                                list("Full matrix", "Most synergistic area (3x3 dose window)")),
+                                    br(),br(),
                                     fluidRow(
                                       radioButtons("icons", "Plot type:",
                                                    choices =
-                                                           list("synergy vs toxicity", "synergy vs inhibition",
-                                                                "inhibition vs toxicity"),
-                                                         selected = "synergy vs toxicity"
+                                                           list("selective efficacy & synergy", "efficacy & synergy"),
+                                                         selected = "selective efficacy & synergy"
                                       )
                                     ),
                                     fluidRow(
@@ -107,6 +111,7 @@ shinyUI(navbarPage(useShinyjs(), useToastr(),
                             ),
                            br()
                            ), 
+                  tabPanel("Combined 3D landscape", uiOutput("plotlcont"), uiOutput("hover_info3")),
        selected = "Summary"
       ),
       tags$div(
